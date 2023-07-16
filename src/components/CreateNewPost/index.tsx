@@ -46,7 +46,6 @@ const CreateNewPost: React.FC = () => {
         title: data.title,
         content: data.content,
       }
-      console.log('newPostData', newPostData)
       await api.newPost(newPostData)
       toast.success('New Post')
       fetchPosts()

@@ -21,11 +21,3 @@ export interface EditPost {
   title: string
   content: string
 }
-
-// export interface GetData {
-//   id: number
-//   username: string
-//   created_datetime: Date
-//   title: string
-//   content: string
-// }
