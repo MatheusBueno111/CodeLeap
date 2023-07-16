@@ -7,11 +7,9 @@ import { toast } from 'react-toastify'
 
 interface PostContextType {
   posts: Post[]
-  fetchPosts: (offset: number) => Promise<void>
+  fetchPosts: () => Promise<void>
   removePost: (postId: number) => Promise<void>
   editPost: (postId: number, updatedData: EditPost) => Promise<void>
-  // setOffset: React.Dispatch<React.SetStateAction<number>>
-  // offset: number
 }
 
 export const PostContext = createContext({} as PostContextType)

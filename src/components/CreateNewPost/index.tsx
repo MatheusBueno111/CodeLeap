@@ -49,7 +49,7 @@ const CreateNewPost: React.FC = () => {
       console.log('newPostData', newPostData)
       await api.newPost(newPostData)
       toast.success('New Post')
-      fetchPosts(0)
+      fetchPosts()
       reset()
     } catch (error) {
       toast.error('Error creating post')
