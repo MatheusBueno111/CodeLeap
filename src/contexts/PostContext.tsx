@@ -50,9 +50,9 @@ const PostContextProvider: React.FC<PostContextProviderProps> = ({
   const editPost = async (postId: number, updatedData: EditPost) => {
     try {
       await api.updatePost(postId, updatedData)
-      toast.success('Failed to edit the post.')
+      toast.success('Post updated')
     } catch (error) {
-      toast.error('')
+      toast.error('Failed to edit the post.')
       console.log(error)
     }
   }
