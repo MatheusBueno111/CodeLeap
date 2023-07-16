@@ -10,7 +10,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ username }) => {
   const dispatch = useDispatch()
   const handleLogout = () => {
-    localStorage.removeItem('user')
+    localStorage.removeItem('@CodeLeap:user')
     dispatch(logoutUser())
   }
 

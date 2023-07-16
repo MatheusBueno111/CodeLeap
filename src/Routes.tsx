@@ -9,7 +9,7 @@ const PrivateRoute = () => {
   const isAuthenticated = useSelector(isLoggedIn)
   const dispatch = useDispatch()
 
-  const userFromStorage = localStorage.getItem('user')
+  const userFromStorage = localStorage.getItem('@CodeLeap:user')
   if (userFromStorage && !isAuthenticated) {
     const user = JSON.parse(userFromStorage)
     dispatch(loginUser(user))
