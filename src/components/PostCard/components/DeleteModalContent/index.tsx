@@ -25,7 +25,7 @@ const DeleteModalContent: React.FC<DeleteModalContentProps> = ({
     <S.Container>
       <p>Are you sure you want to delete this item?</p>
       <S.Buttons>
-        <S.Cancel>Cancel</S.Cancel>
+        <S.Cancel onClick={onClose}>Cancel</S.Cancel>
         <S.Delete onClick={() => onDeletePost(postId)}>Delete</S.Delete>
       </S.Buttons>
     </S.Container>

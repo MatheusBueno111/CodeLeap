@@ -44,10 +44,9 @@ const EditModalContent: React.FC<EditModalContentProps> = ({
 
   const editPostCard = async (data: editPostFormSchemaData) => {
     try {
-      const { title, content } = getValues() // Obtenha os valores atuais do formulário
+      const { title, content } = getValues()
       if (title === postCard.title && content === postCard.content) {
-        // Verifique se os valores atuais são iguais aos valores padrão
-        onClose() // Não há alterações, feche o modal
+        onClose()
         return
       }
       const updatedPostData = {
