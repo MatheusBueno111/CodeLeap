@@ -39,7 +39,7 @@ const SignUp: React.FC = () => {
       username: data.username,
     }
     dispatch(loginUser(newUser))
-    localStorage.setItem('@CodeLeap:user', JSON.stringify(newUser))
+
     navigate('/')
   }
 

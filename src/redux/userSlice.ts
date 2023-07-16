@@ -18,6 +18,7 @@ export const userSlice = createSlice({
     loginUser: (state, { payload }: PayloadAction<User>) => {
       state.username = payload.username
       state.isLoggedIn = true
+      localStorage.setItem('@CodeLeap:user', JSON.stringify(payload))
     },
     logoutUser: (state) => {
       state.username = ''
